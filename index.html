@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const mahasigma = [
+            { id: 1, nama: "Ucup", nilai:70},
+            { id: 2, nama: "Jaenudin", nilai:75},
+            { id: 3, nama: "Joni", nilai:80},
+            { id: 4, nama: "Gilang", nilai:86},
+        ];
+
+        const lulus = mahasigma.filter(data => data.nilai >= 75 );
+        console.log(lulus);
+        
+        const ucup = mahasigma.find(u => u.nama === "Ucup");
+        console.log(ucup);
+        
+        const sum = mahasigma.reduce((acc, curr) => acc + curr.nilai, 0);
+        console.log(sum);
+
+        const potong = mahasigma.splice(1, 2);
+        console.log(potong);
+        
+        
+
+    </script>
+</body>
+</html>
